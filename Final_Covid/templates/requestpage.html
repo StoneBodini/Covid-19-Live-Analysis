@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h1>Request for instant email update</h1>
+    <br /><br />
+
+    <form action="/requestform" method="POST">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Email Address" name="email_request">
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Request Email</button>
+    </form>
+</div>
+{% endblock %}

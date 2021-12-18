@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <h1>Project Goals</h1>
+    <h3>This is a project created in order to display different visualizations of Covid-19. Using a live dataset from
+        github we have displayed multiple heat maps and a 30 day line graph of reported cases in the United States for
+        the most current day. In
+        addition we also added a subscription service that allows you to receive email updates upon request for the
+        county you live in.</h3>
+    <br></br>
+    <h4>Data Info</h4>
+    <p>The data we are using is uploaded on the New York times github and is maintained both by them and John Hopkins.
+        They update this dataset 3 times a day based on incoming reported cases of Covid-19. Source:
+        https://raw.githubusercontent.com/nytimes/covid-19-data/master/rolling-averages/us-counties-recent.csv</p>
+</div>
+{% endblock %}

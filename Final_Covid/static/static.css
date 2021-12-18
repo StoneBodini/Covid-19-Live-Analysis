@@ -1,0 +1,27 @@
+h1{
+    color:black;
+    font-size: 46px;
+}
+
+h4{
+    color: black;
+    font-size: 30px;
+}
+
+body{
+    background: white;
+}
+
+.legend-box {
+    background-color: grey;
+    height: 2px;
+    width: 10px;
+    padding: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.legend-label {
+    font-size: .85em;
+    vertical-align: middle;
+}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>COVID-19 Potential Risk County Analysis</h1>
+    <div class="row">
+
+        <div class="col-4">
+            <h5>Top 15 Counties</h5>
+            <table class="table-responsive-sm table-light">
+                <thead>
+                    <tr>
+                        <th scope="col">County</th>
+                        <th scope="col">Potential Risk
+                    </tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for pair in pairs %}
+                    <tr>
+                        <td>{{ pair[0]}}</td>
+                        <td>{{ pair[1]}} %</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-8">
+            <h5>United States map of corona cases. The darker the county, the larger number of corona cases.</h5>
+            <h7>This map shows the potentail risk of you contracting covid if you came in contact with 100 random
+                people.</h7>
+            {{cmap|safe}}
+            <span class="legend-box"></span>
+            <span class="legend-label">
+                Areas colored grey have no recent data
+            </span>
+            <p>This is an interactive map. Feel free to click, drag, and zoom in as you please.</p>
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h1>COVID-19 30 Day Line Graph</h1>
+    <div class="row">
+        <div class="col-8">
+            <p>This line graph properly displays the total amount of reported cases accross the entire United States.
+                The right most point is today and the left most point is 30 days ago. This graph is usefull in
+                identifying the trend of overall cases.</p>
+            <img src="{{ user_image }}" alt="30 day line graph was not properly displayed" />
+        </div>
+    </div>
+</div>
+{% endblock %}

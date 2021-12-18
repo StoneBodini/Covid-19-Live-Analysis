@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h1>Error...</h1>
+    {{ error_statement }}
+    <br />
+    <form action="/subscribeform" method="POST">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="First Name" name="first_name">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Last Name" name="last_name">
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Email Address" name="email">
+        </div>
+        <div class="mb-3">
+            <input type="test" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="County" name="county">
+        </div>
+        <div class="mb-3">
+            <input type="test" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="State (Full name ex: California)" name="state">
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}
